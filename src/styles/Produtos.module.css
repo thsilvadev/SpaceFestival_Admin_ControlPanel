@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Abas {
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.Produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.Card {
+    margin: 0px 30px 0px 30px;
+    height: 100px;
+    width: 50%;
+    border: 5px;
+    border-style: outset;
+    border-color: red;
+}
+
+.h1{
+    margin-top: 50px;
+}
+
+.ativo {
+    border: 5px solid orange;
+}
+
+a {
+    text-decoration: none;
+}
