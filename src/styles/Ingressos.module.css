@@ -31,11 +31,11 @@ table {
 }
 
 table td {
-    border: 5px solid rgb(197, 197, 197);
+    border: 1px solid rgb(197, 197, 197);
 }
 
 table th {
-    border: 5px solid rgb(197, 197, 197);
+    border: 1px solid rgb(197, 197, 197);
 }
 
 td:last-child {
@@ -44,4 +44,8 @@ td:last-child {
 
 th:last-child {
     border-style: none;
+}
+
+tr {
+    border-bottom: none;
 }

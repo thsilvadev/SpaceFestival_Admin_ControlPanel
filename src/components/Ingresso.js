@@ -30,12 +30,12 @@ const Ingresso = ({
 
           <div className={styles.column}>
             <button className={styles.column}>
-              <p>Editar</p>
+              Editar
             <img src={iconlapis} width="30" height="30" alt="..." />
             </button>
 
             <button className={styles.column}>
-              <p>Deletar</p>
+              Deletar
             <img src={iconlixo} width="30" height="30" alt="..." />
 
             </button>

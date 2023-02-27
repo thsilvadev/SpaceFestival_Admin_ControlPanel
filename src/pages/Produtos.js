@@ -20,7 +20,6 @@ function Produtos() {
       setProdutos(produtos);
     };
     fetchData();
-    console.log(produtos);
   }, []);
 
 

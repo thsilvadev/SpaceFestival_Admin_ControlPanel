@@ -1,5 +1,3 @@
-import BotaoAba from "../components/BotaoAba";
-
 import Tabs from "../components/tabs/Tabs";
 import Ingresso from "../components/Ingresso";
 
@@ -23,7 +21,6 @@ function Ingressos() {
       setIngressos(tipos_ingressos);
     };
     fetchData();
-    console.log(ingressos);
   }, []);
 
   //PEDIDOS
@@ -36,7 +33,6 @@ function Ingressos() {
       setPedidos(pedidos_clientes);
     };
     fetchData();
-    console.log(pedidos);
   }, []);
 
   return (
@@ -47,7 +43,7 @@ function Ingressos() {
         <h2> Ingressos</h2>
 
         <div class="text-center">
-          <div class="row justify-content-around">
+          <div class="row justify-content-start">
             {
                 ingressos.map((ingresso) => ( 
                     <Ingresso 

@@ -1,6 +1,3 @@
-import Api from '../Api'
-
-
 
 const ingressosFromApi = {
     data: [
@@ -10,8 +7,9 @@ const ingressosFromApi = {
             valor: "R$ 150,00",
             data_evento: "12/04/2023",
             quantidade: 10,
-            foto_disponivel: "https://dummyimage.com/300x200/000/fff&text=ingresso1",
-            foto_indisponivel: "https://dummyimage.com/300x200/000/fff&text=imagem2"
+            foto_disponivel: "https://i.ibb.co/B48M8ZW/1.png",
+            foto_indisponivel: "https://i.ibb.co/p13W1VH/5.png",
+            foto: ""
 
         },
 
@@ -21,8 +19,8 @@ const ingressosFromApi = {
             valor: "R$ 150,00",
             data_evento: "13/04/2023",
             quantidade: 10,
-            foto_disponivel: "https://dummyimage.com/300x200/000/fff&text=ingresso2",
-            foto_indisponivel: "https://dummyimage.com/300x200/000/fff&text=imagem2"
+            foto_disponivel: "https://i.ibb.co/JpXnQ6y/2.png",
+            foto_indisponivel: "https://i.ibb.co/QXfCLhC/6.png"
 
         },
 
@@ -32,8 +30,8 @@ const ingressosFromApi = {
             valor: "R$ 150,00",
             data_evento: "14/04/2023",
             quantidade: 10,
-            foto_disponivel: "https://dummyimage.com/300x200/000/fff&text=ingresso3",
-            foto_indisponivel: "https://dummyimage.com/300x200/000/fff&text=imagem2"
+            foto_disponivel: "https://i.ibb.co/6HcmG0Z/3.png",
+            foto_indisponivel: "https://i.ibb.co/8KpRkR2/7.png"
         },
 
         {
@@ -42,8 +40,8 @@ const ingressosFromApi = {
             valor: "R$ 350,00",
             data_evento: "de 12 a 14 de Abril",
             quantidade: 10,
-            foto_disponivel: "https://dummyimage.com/300x200/000/fff&text=imagem",
-            foto_indisponivel: "https://dummyimage.com/300x200/000/fff&text=imagem2"
+            foto_disponivel: "https://i.ibb.co/MnMwRTP/4.png",
+            foto_indisponivel: "https://i.ibb.co/rbkBd0h/8.png"
         }
 
     ]

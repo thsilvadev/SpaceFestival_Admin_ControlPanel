@@ -1,6 +1,3 @@
-import Api from '../Api'
-
-
 
 const pedidosFromApi = {
     data: [
