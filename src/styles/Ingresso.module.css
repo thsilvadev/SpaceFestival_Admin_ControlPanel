@@ -8,13 +8,14 @@
     text-align: left;
     line-height: 0px;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.158);
+    background-color: rgba(0, 0, 0, 0.185);
 }
 
 .box h1 {
     text-align: center;
     font-weight: bold;
 }
+
 
 .imagem {
     display:flex;

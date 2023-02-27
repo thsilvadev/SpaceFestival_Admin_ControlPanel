@@ -33,11 +33,45 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 3px;
+    padding: 5px;
     text-align: center;
-    border-radius: 3px !important;
-    background-color: rgb(215, 240, 193) !important;
-    border-color:rgb(49, 49, 49) !important;
+    border-radius: 10px !important;
+    background-color: white !important;
+    border-color:white !important;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
-/* falta hover */
+/* button:hover {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 60%, rgb(255, 17, 0) 65%);
+    animation:reverse;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+} */
+
+button:hover {
+    background-position: 100% 200%;
+}
+
+button {
+    background: linear-gradient(90deg,#fdfdfd, #ffffff 30%, gray 30%, gray   );
+    background-size: 400% 200%;
+    transition: background 3s;
+}
+
+button:hover img {
+    animation: tremer infinite 3s;
+}
+
+@keyframes tremer {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-3px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
