@@ -22,8 +22,6 @@
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-    
-    vertical-align: middle;
 }
 
 .responsive {
@@ -36,3 +34,5 @@ button {
     background-color: bisque;
     border-color:darkgray;
 }
+
+/* falta hover */
