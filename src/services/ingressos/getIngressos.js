@@ -38,7 +38,7 @@ const ingressosFromApi = {
             nome: "Passaporte",
             id: "2",
             valor: "R$ 350,00",
-            data_evento: "de 12 a 14 de Abril",
+            data_evento: "Todos os Dias",
             quantidade: 10,
             foto_disponivel: "https://i.ibb.co/MnMwRTP/4.png",
             foto_indisponivel: "https://i.ibb.co/rbkBd0h/8.png"

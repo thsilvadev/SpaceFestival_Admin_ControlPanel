@@ -4,11 +4,16 @@
     display: flex;
     min-width: 280px;
     flex-direction: column;
-    padding: 5px;
+    padding: 15px;
     text-align: left;
     line-height: 0px;
-    background-color: aliceblue;
     border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+.box h1 {
+    text-align: center;
+    font-weight: bold;
 }
 
 .imagem {
@@ -24,7 +29,6 @@
     align-items: center;
     justify-content: space-around;
     gap: 10px;
-    
     vertical-align: middle;
 }
 
