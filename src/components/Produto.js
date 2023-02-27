@@ -26,7 +26,7 @@ const Ingresso = ({ peca, valor, foto, fotoHover }) => {
             </button>
 
             <button className={styles.column}>
-              <p>Editar</p>
+              <p>Deletar</p>
               <img src={iconlixo} width="30" height="30" alt="..." />
             </button>
           </div>
