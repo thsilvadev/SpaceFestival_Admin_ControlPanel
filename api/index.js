@@ -13,19 +13,10 @@ app.use(express.urlencoded({extended:false}));
 app.use(cors());
 app.use(express.json())
 
-app.get("/produtos/:id", productRouter)
-app.get("/produtos", productRouter)
-app.put("/produtos/:id", productRouter)
+app.use(purchaseRouter)
+app.use(ticketRouter)
+app.use(productRouter)
 
-
-app.get("/ingresso", ticketRouter)
-app.get("/ingresso/:id", ticketRouter)
-app.post("/ingresso", ticketRouter)
-app.put("/ingresso/:id", ticketRouter)
-
-
-app.get("/pedido_ingresso", purchaseRouter)
-app.post("/pedido_ingresso", purchaseRouter)
 
 const PORT = process.env.PORT || 8800
 

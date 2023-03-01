@@ -18,10 +18,6 @@ const purchaseController = {
                 data: rows
             })
 
-            res.json({
-                data: rows
-            })
-
         } catch (error) {
             console.log(error)
 
@@ -31,10 +27,6 @@ const purchaseController = {
         try {
             const { id } = req.params
             const [rows, fields] = await pool.query("select * from ingresso where id = ?", [id])
-
-            res.json({
-                data: rows
-            })
 
             res.json({
                 data: rows

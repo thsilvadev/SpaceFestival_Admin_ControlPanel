@@ -48,12 +48,11 @@ function PostarIngresso() {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm({
     resolver: yupResolver(validarIngresso),
   });
 
-  const postIngresso = (data) =>
+  const postIngresso = (response) =>
     Axios.post("http://localhost:8800/ingresso", data)
       .then((response) => {
         navigate("/");

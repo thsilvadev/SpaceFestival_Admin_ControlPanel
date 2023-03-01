@@ -8,7 +8,7 @@ router.get("/ingresso", ticketController.getAll)
 router.get("/ingresso/:id", ticketController.getById)
 
 
-router.post("/ingresso", ticketController.create)
+router.post("/postingresso", ticketController.create)
 
 
 module.exports = router

@@ -18,10 +18,6 @@ const productController = {
                 data: rows
             })
 
-            res.json({
-                data: rows
-            })
-
         } catch (error) {
             console.log(error)
 

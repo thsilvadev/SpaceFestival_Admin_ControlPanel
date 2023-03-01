@@ -43,34 +43,30 @@ const validarIngresso = yup.object({
 
 
 function EditIngresso() {
-    const {register, handleSubmit, formState: { errors }, reset, } = useForm({
+  const { register, handleSubmit, formState: { errors }, reset, } = useForm({
     resolver: yupResolver(validarIngresso),
   });
 
   let navigate = useNavigate();
 
-  const {id} = useParams();
-
-const [ingressos, setIngressos] = useState([]);
-
+  const { id } = useParams();
 
   useEffect(() => {
     Axios.get(`http://localhost:8800/ingresso/${id}`)
-    .then((response) => {
-        setIngressos(response.data.data);
+      .then((response) => {
         reset(response.data.data)
+      })
+  }, [])
+
+
+
+  const putIngresso = (data) => Axios.put(`http://localhost:8800/ingresso/${id}`, data)
+    .then(() => {
+      navigate('/')
     })
-}, [])
-
-
-
-  const putIngresso = (data) => Axios.put(`http://localhost:8800/ingresso/${id}`, data) 
-   .then(() => {
-    navigate('/')
-   }) 
- .catch(() => {
-        alert("Erro ao adicionar o ingresso.");
-      });
+    .catch(() => {
+      alert("Erro ao adicionar o ingresso.");
+    });
 
   return (
     <>
@@ -123,7 +119,7 @@ const [ingressos, setIngressos] = useState([]);
               />
               <p className="error-message">{errors.quantidade?.message}</p>{" "}
               {/* depois eu vejo isso */}
-              
+
               <label htmlFor="foto">Imagem:</label>
               <input className={styles.input}
                 type="text"
@@ -157,7 +153,7 @@ const [ingressos, setIngressos] = useState([]);
               <p className="error-message">{errors.foto?.message}</p>{" "}
               {/* depois eu vejo isso */}
 
-              
+
               <button className={styles.submit}>Editar ingresso</button>
             </form>
             <Link class="h1 text-light" to="/"><u>Voltar</u></Link>
