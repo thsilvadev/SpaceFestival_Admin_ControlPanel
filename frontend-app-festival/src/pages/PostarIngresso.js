@@ -82,6 +82,7 @@ function PostarIngresso() {
               {/* depois eu vejo isso */}
               <label htmlFor="data_evento">Data do Evento:</label>
               <input className={styles.input}
+                maxLength={10}
                 type="text"
                 name="data_evento"
                 placeholder="Insira a data relativa ao ingresso"

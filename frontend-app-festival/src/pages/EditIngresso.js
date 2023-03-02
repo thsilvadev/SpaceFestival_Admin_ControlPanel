@@ -45,29 +45,30 @@ const validarIngresso = yup.object({
 function EditIngresso() {
 
 
-  const { register, handleSubmit, formState: { errors }, reset } = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset
+  } = useForm({
     resolver: yupResolver(validarIngresso),
   });
 
   const { id } = useParams();
 
+  let navigate = useNavigate();
+
   useEffect(() => {
     Axios.get(`http://localhost:3344/ingresso/${id}`)
       .then((response) => {
-        reset(response.data);
+        const { titulo, valor, descricao, imagem } = response.data;
+        reset({ titulo, valor, descricao, imagem });
       })
   }, [id, reset])
 
-
-
-  
-
-  let navigate = useNavigate();
-
-
-  const putIngresso = (response) => Axios.put(`http://localhost:3344/ingresso/${id}`, response.data)
+  const putIngresso = (data) => Axios.put(`http://localhost:3344/ingresso/${id}`, data)
     .then(() => {
-      navigate('/ingresso')
+      navigate('/')
     })
     .catch(() => {
       alert("Erro ao adicionar o ingresso.");
@@ -95,6 +96,7 @@ function EditIngresso() {
               {/* depois eu vejo isso */}
               <label htmlFor="data_evento">Data do Evento:</label>
               <input className={styles.input}
+                maxLength={10}
                 type="text"
                 name="data_evento"
                 placeholder="Insira a data relativa ao ingresso"
